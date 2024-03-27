@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    /*
+        Color scheme
+    */
+    --primary-green: hsl(75, 94%, 57%);
+    --secondary-white: hsl(0, 0%, 100%);
+    --secondary-grey: hsl(0, 0%, 20%);
+    --secondary-dark-grey: hsl(0, 0%, 12%);
+    --secondary-off-black: hsl(0, 0%, 8%);
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body {
+    background-color: hsl(0, 0%, 8%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+  }
+
+  main {
+    background-color: var(--secondary-dark-grey);
+    width: 384px;
+    border-radius: 12px;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+
+  main img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin: 0px auto;
+  }
+  
+  div[role="heading"]{
+    margin-top: 24px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  h2 {
+    color: var(--primary-green);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #description {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 24px auto;
+  }
+
+  .holder {
+    display: grid;
+    grid-gap: 16px;
+  }
+
+  .link {
+    padding: 12px 0px 12px 0px;
+    background-color: var(--secondary-grey);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+  }
