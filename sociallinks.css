@@ -119,3 +119,9 @@
     font-weight: 700;
     border-radius: 8px;
   }
+
+  .link:hover {
+    background-color: var(--secondary-white);
+    color:var(--secondary-off-black);
+    cursor: pointer;
+  }
