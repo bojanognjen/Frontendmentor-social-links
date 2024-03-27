@@ -85,7 +85,7 @@
     margin: 0px auto;
   }
   
-  div[role="heading"]{
+  .heading {
     margin-top: 24px;
   }
 
